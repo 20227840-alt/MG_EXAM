@@ -1,0 +1,93 @@
+body{
+  background: white;
+  padding: 0px;
+  margin: 0px;
+  font-family:monospace;
+}
+#root {
+    width: -webkit-fill-available;
+    height: 100vh;
+    
+}
+.HeaderContainer{
+  display: flex;
+    justify-content: space-between;
+    background: #393939;
+    padding: 10px;
+}
+.NavContainer{
+   display: flex;
+    gap: 24px;
+    margin-right: 70px;
+    align-items: center;  
+}
+.MobileHeaderContainer{
+    display: none;
+    justify-content: space-between;
+    background: #393939;
+    padding: 10px;
+  }
+.NavLinks{
+  color: #a7a0a0;
+    text-decoration: none;
+}
+.NavLinks:hover{
+  color:white
+}
+.NavLinksactive {
+  color: white;
+  text-decoration: none;
+}
+.LogoContainer{
+    color: white;
+    margin-left: 70px;
+    font-size: 17px;
+}
+.MobileLogoandIcon{
+  display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+.contentBody{
+  margin-left: 78px;
+    margin-right: 78px;
+}
+@media screen and (max-width: 874px) {
+    .HeaderContainer{
+      display: none;
+      justify-content: space-between;
+      background: #393939;
+      padding: 10px;
+    }
+    .MobileHeaderContainer{
+      display: flex;
+      background: #393939;
+      padding: 10px;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .NavContainerMobile{
+        display: none;
+        gap: 19px;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        align-items: flex-start;
+    }
+    .MobileMenuIcon {
+        width: 26px;
+        border: 1px solid white;
+        padding: 5px;
+    }
+    .LogoContainer{
+        color: white;
+        font-size: 17px;
+        margin-left: 0px;
+    }
+    .contentBody{
+        margin: auto;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding: 10px;
+    }
+
+}
